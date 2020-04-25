@@ -1,3 +1,6 @@
+----SSH----
+ssh-keygen -t rsa -C angelricardo.uthh@gmail.com
+
 ----GIT----
 Git global setup
 $ git config --global user.name "Angel Ricardo Vega Hernandez"

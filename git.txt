@@ -1,5 +1,13 @@
+----COMMANDS----
+# Alt + 126 = ~
+
 ----SSH----
-ssh-keygen -t rsa -C angelricardo.uthh@gmail.com
+#Create ssh key since home
+$ ssh-keygen -t rsa -b 4096 -C angelricardo.uthh@gmail.com
+#Encender el "servidor" de llaves SSH de tu computadora:
+$ eval $(ssh-agent -s)
+#Añadir tu llave SSH a este "servidor":
+$ ssh-add ~/.ssh/id_rsa
 
 ----GIT----
 #Global environtments
@@ -33,6 +41,7 @@ $ git push -u origin --all
 $ git push -u origin --tags
 
 #See all branchs
+$ git branches
 #Change of branch
 $ git checkout -b avega
 

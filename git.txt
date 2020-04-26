@@ -32,7 +32,8 @@ $ git remote add origin https://github.com/detectortroyano/git-commands.git
 $ git push -u origin --all
 $ git push -u origin --tags
 
-#cambiarse de branch
+#See all branchs
+#Change of branch
 $ git checkout -b avega
 
 ----SUBIR POR PRIMERA VEZ A REPOSITORIO REMOTO----

@@ -40,10 +40,19 @@ $ git remote add origin https://github.com/detectortroyano/git-commands.git
 $ git push -u origin --all
 $ git push -u origin --tags
 
+----BRANCH----
 #See all branchs
-$ git branches
+$ git branch
+#Create branch
+$ git branch develop
 #Change of branch
-$ git checkout -b avega
+$ git checkout -b develop
+#Visual branch history
+$ gitk
+
+----MERGE----
+$Merge develop to master in master branch
+$ git merge develop
 
 ----SUBIR POR PRIMERA VEZ A REPOSITORIO REMOTO----
 #Add new remote repository

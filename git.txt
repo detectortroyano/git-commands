@@ -49,6 +49,8 @@ $ git branch develop
 $ git checkout -b develop
 #Visual branch history
 $ gitk
+#Get remote branch
+$ git pull origin footer
 
 ----MERGE----
 $Merge develop to master in master branch

@@ -53,8 +53,14 @@ $ gitk
 $ git pull origin footer
 
 ----MERGE----
-$Merge develop to master in master branch
+#Merge develop to master in master branch
 $ git merge develop
+#Merge local repository since another remote origin
+$ git remote add upstream https://github.com/detectortroyano/git-commands.git
+$ git remote -v
+$ git pull upstream master
+$ git commit -m "Fusion remote repository to local master"
+$ git push origin master
 
 ----SUBIR POR PRIMERA VEZ A REPOSITORIO REMOTO----
 #Add new remote repository
@@ -63,6 +69,8 @@ $ git remote add origin git@github.com:detectortroyano/java-jnotify.git
 $ git pull origin master
 $ git push origin master
 
+#See all remote repository
+$ git remote -v
 #Change remote repository
 $ git remote set-url origin git@github.com:detectortroyano/git-commands.git
 

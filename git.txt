@@ -45,8 +45,10 @@ $ git push -u origin --tags
 $ git branch
 #Create branch
 $ git branch develop
-#Change of branch
+#Switch new branch
 $ git checkout -b develop
+#Switch existing branch
+$ git checkout develop
 #Visual branch history
 $ gitk
 #Get remote branch

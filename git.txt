@@ -43,7 +43,7 @@ $ git push -u origin --tags
 ----BRANCH----
 #See all branchs
 $ git branch
-#Create branch
+#Create branch in local
 $ git branch develop
 #Switch new branch
 $ git checkout -b develop
@@ -94,3 +94,19 @@ $ git push origin :refs/tags/v0.0.1
 
 #Revert last commit
 $ git revert HEAD
+
+----STASH----
+#Stash
+#Change files and save in temporal files
+$git stash
+#Show stash
+$git stash list
+#Stash in new branch
+$git stash branch new_branch
+#Open stash with my save changes
+$git stash pop
+#Comit our changes
+$git commit -m "Save ours changes of temporal"
+
+#Delete stash
+$git stash drop

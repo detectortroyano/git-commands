@@ -118,3 +118,7 @@ $ git stash drop
 $ git clean --dry-run
 #Delete files
 $ git clean -f
+
+----CHERRY----
+#Get old commit of anywhere branch
+$ git cherry-pick IDCommit

@@ -41,8 +41,12 @@ $ git push -u origin --all
 $ git push -u origin --tags
 
 ----BRANCH----
-#See all branchs
+#See all local branchs
 $ git branch
+#See all remote branchs
+$ git branch -r
+#See all local and remote branchs
+$ git branch -a
 #Create branch without switch of branch
 $ git branch develop
 #Create branch and switch new branch
@@ -147,3 +151,6 @@ $ git grep "<p>"
 #Searching in log
 $ git log -S "word_to_search" 
 
+----BLEAM----
+#Show autor by line
+$git blame -c file_name

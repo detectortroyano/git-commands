@@ -126,3 +126,11 @@ $ git cherry-pick IDCommit
 ----AMEND----
 #Rebuild last commit
 $ git commit --amend
+
+----RESET----
+#Show logs
+$ git reflog
+#Reset staging without losing
+$ git reset --soft
+#Reset hard, return to something commit
+$ git reset --hard IDCommit

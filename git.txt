@@ -134,3 +134,16 @@ $ git reflog
 $ git reset --soft
 #Reset hard, return to something commit
 $ git reset --hard IDCommit
+
+----GREP AND LOG----
+#Word searching
+$ git grep word_to_search
+#Show line
+$ git grep -n word_to_search
+#Show count in a file
+$ git grep -c word_to_search
+#Search label
+$ git grep "<p>"
+#Searching in log
+$ git log -S "word_to_search" 
+

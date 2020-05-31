@@ -43,9 +43,9 @@ $ git push -u origin --tags
 ----BRANCH----
 #See all branchs
 $ git branch
-#Create branch in local
+#Create branch without switch of branch
 $ git branch develop
-#Switch new branch
+#Create branch and switch new branch
 $ git checkout -b develop
 #Switch existing branch
 $ git checkout develop
@@ -76,9 +76,11 @@ $ git remote -v
 #Change remote repository
 $ git remote set-url origin git@github.com:detectortroyano/git-commands.git
 
+----LOG----
 #Log
 $ git log --all --graph --decorate --oneline
 
+----TAG----
 #Tag
 $ git tag -a v0.0.1 -m "Version inicial" 8c3da5a
 #Show tags
@@ -98,15 +100,21 @@ $ git revert HEAD
 ----STASH----
 #Stash
 #Change files and save in temporal files
-$git stash
+$ git stash
 #Show stash
-$git stash list
+$ git stash list
 #Stash in new branch
-$git stash branch new_branch
+$ git stash branch new_branch
 #Open stash with my save changes
-$git stash pop
+$ git stash pop
 #Comit our changes
-$git commit -m "Save ours changes of temporal"
+$ git commit -m "Save ours changes of temporal"
 
 #Delete stash
-$git stash drop
+$ git stash drop
+
+----CLEAN----
+#File to delete
+$ git clean --dry-run
+#Delete files
+$ git clean -f

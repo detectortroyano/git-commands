@@ -122,3 +122,7 @@ $ git clean -f
 ----CHERRY----
 #Get old commit of anywhere branch
 $ git cherry-pick IDCommit
+
+----AMEND----
+#Rebuild last commit
+$ git commit --amend
